@@ -1,0 +1,72 @@
+﻿@model PreProcessing_VM.Models.admin
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<!--
+    
+    <div class="fadein">
+    <img src="~/Content/img/1.jpg" alt="Old Photos" width="900" height="300" />
+    <img src="~/Content/img/2.jpg" alt="Old Photos" width="900" height="300" />
+    <img src="~/Content/img/3.jpg" alt="Old Photos" width="900" height="300" />
+    </div>
+
+-->
+
+
+<div class="jumbotron">
+    <h1 >Big Data Analytics In Healthcare: Countering Tuberculosis – a global approach</h1>
+    @*<!--<p><a href="@Url.Action("LearnMore","Home")" class="btn btn-primary btn-lg">Learn More &raquo;</a></p>-->*@
+    
+</div>
+
+
+  
+
+
+
+<div class="row">
+    
+    <div class="col-md-7">
+        <h2 class="font1">Abstract</h2>
+        <p class="font1" style="text-align:justify;">
+            Tuberculosis, the curable disease that continues to kill. TB has been a Global Emergency since 1993, yet the disease continues to grow, With 9.4 million new cases and 1.7 million deaths each year. HIV/aids has become major threat to world health, why are we unable to stop these kind Is it the failure of our health system? It’s not just TB, HIV consider any epidemic with latest entry to this list EBOLA. There has been numerous research and analysis done on these, but none gave the complete and real time solution to these epidemic this research focuses on implementing the Big Data analytics to provide valuable insights to the practitioners. Today Big Data technology is providing assistance not just in the field of Computer Science, it is now being applied to the wide range of application ranging from astronomy to healthcare. The design intended to do what big data is all about, converting large Quantity of Invaluable data into valuable data. By collecting data on tuberculosis which exist in many forms, along with real time web and social feed from social networking sites around the world, this design is aiming to achieve global scale pattern and hence helping governmental and Non-governmental Organization working in this direction with the aim of countering the Tuberculosis for the better future of mankind.
+        </p>
+    </div>
+    <div class="col-md-8">
+        <h2 class="font1">About us</h2>
+        <ul>
+            <li>
+                <span class="font1" style="background-color:yellow">
+                    Funded by Microsoft - Microsoft Azure Research Award 2014-15
+                </span>
+            </li>
+            <li>
+                <p class="font1">
+                    <strong>Members</strong>
+                    <ul>
+                        <li>Sourabh Pandey - 1AT11CS100</li>
+                        <li>Sachin Hegde - 1AT11CS080</li>
+                    </ul>
+                </p>
+            </li>
+          
+        </ul>
+    </div>
+</div>
+
+
+@Scripts.Render("~/bundles/jquery")
+
+<script>
+    $(function () {
+        $('.fadein img:gt(0)').hide();
+        setInterval(function () {
+            $('.fadein :first-child').fadeOut()
+               .next('img').fadeIn()
+               .end().appendTo('.fadein');
+        },
+          3000);
+    });
+</script>

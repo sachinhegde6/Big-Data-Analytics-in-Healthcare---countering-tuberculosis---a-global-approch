@@ -1,0 +1,29 @@
+﻿@model List<PreProcessing_VM.ClusterList>
+@{
+    ViewBag.Title = "Execute";
+}
+
+<h2>List of Clusters</h2>
+<hr/>
+<div>
+
+    <table>
+        <tr>
+            <th>@Html.Label("Name")</th>
+            <th>@Html.Label("Node")</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td align="center">@item.Node</td>
+
+
+            </tr>
+        }
+
+
+    </table>
+
+</div>

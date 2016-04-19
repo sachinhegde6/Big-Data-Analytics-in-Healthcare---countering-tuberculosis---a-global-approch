@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="G_TBDB_AzureCLoudService_Standalone" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2014-06.2.4">
+  <Role name="PreProcessing_VM">
+    <Instances count="2" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=gtbdb;AccountKey=4wm4VjmEcGdDyNRKA9kHfsivGvEup2ik39YrJfs98h7J4QcJUf8XXuSchS09sNTR05E0jFleeHqjGNg+siePWg==" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

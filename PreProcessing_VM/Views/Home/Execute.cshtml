@@ -1,0 +1,19 @@
+﻿@model string
+
+@{
+    ViewBag.Title = "Hive Output";
+}
+
+<h3>Hive Query Output</h3>
+
+
+
+<textarea readonly rows="10" cols="500" style=" width:1100px;  height:450px;  font-size: 12px;  font-weight: 200;  line-height: 1;  color: black;  border-radius:5px;  background-color: #eeeeee; overflow:auto; ">
+    @Model
+</textarea>
+
+   
+<p>
+   
+    <a href="@Url.Action("DownloadBlob","Home")" >Download Output</a>
+</p>
